@@ -1,0 +1,359 @@
+/* ==========================================================
+   Modern Portfolio Stylesheet (Improved Visibility Edition)
+   Author: Antony Raj Portfolio
+   ========================================================== */
+
+/* ---------- Root Colors & Theme ---------- */
+:root {
+  --bg: #071021;                     /* Deep navy background */
+  --surface: #0f1b2a;                /* Card background */
+  --surface-light: rgba(255,255,255,0.06);
+  --surface-hover: rgba(255,255,255,0.10);
+
+  --primary: #00c2a8;                /* Accent teal */
+  --primary-light: #3dd0f3;
+
+  --text: #e6eef6;                   /* High contrast white */
+  --text-muted: #b7c2cf;             /* Light grey */
+  --text-soft: #94a3b8;
+
+  --accent-grad: linear-gradient(90deg, #00c2a8 0%, #3dd0f3 100%);
+}
+
+/* ---------- Global Reset ---------- */
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background: linear-gradient(180deg, #05101f 0%, #07142a 100%);
+  color: var(--text);
+  padding-top: 72px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  padding: 0.7rem 1rem;
+  background: transparent;
+  transition: all 0.35s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(7, 16, 33, 0.92);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+
+/* Branding */
+.brand-mark {
+  width: 44px;
+  height: 44px;
+  background: var(--accent-grad);
+  color: #021018;
+  border-radius: 12px;
+  font-weight: 700;
+  display: flex;
+  font-size: 1.1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- HERO Section ---------- */
+.hero-section {
+  min-height: calc(100vh - 72px);
+  display: flex;
+  align-items: center;
+  padding: 70px 0;
+}
+
+.text-gradient {
+  background: var(--accent-grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Profile card */
+.profile-card {
+  background: var(--surface-light);
+  padding: 22px;
+  border-radius: 14px;
+  text-align: center;
+  backdrop-filter: blur(4px);
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  object-fit: cover;
+  border: 3px solid rgba(255,255,255,0.08);
+}
+
+/* ---------- Sections ---------- */
+.section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.section-alt {
+  background: rgba(255,255,255,0.02);
+}
+
+.section-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-family: "Rubik", sans-serif;
+}
+
+/* ---------- ABOUT Section ---------- */
+.about-img {
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+}
+
+/* Timeline */
+.timeline li strong {
+  color: var(--text);
+}
+.timeline small {
+  color: var(--text-soft);
+}
+
+/* ---------- Skills ---------- */
+.progress {
+  background: rgba(255,255,255,0.08);
+  height: 10px;
+  border-radius: 20px;
+}
+
+.progress-bar {
+  background: var(--accent-grad);
+  border-radius: 20px;
+  font-size: 10px;
+}
+
+/* ---------- Service Cards ---------- */
+.service-card {
+  background: var(--surface-light);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  padding: 20px;
+}
+
+.service-card:hover {
+  background: var(--surface-hover);
+  transform: translateY(-6px);
+}
+
+.service-card .card-title {
+  color: var(--text) !important;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.service-card .card-text {
+  color: rgba(255,255,255,0.78) !important;
+  line-height: 1.45;
+}
+
+.service-icon {
+  font-size: 28px;
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+/* ---------- Portfolio Cards ---------- */
+.project-card {
+  background: var(--surface-light);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  background: var(--surface-hover);
+}
+
+.project-thumb {
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+}
+
+.project-thumb img {
+  transform: scale(1);
+  transition: transform 0.45s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.08);
+}
+
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  padding: 14px;
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.45));
+  opacity: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+/* ---------- Testimonials ---------- */
+/* =======================================================
+   UPGRADED TESTIMONIALS STYLING (Modern UI)
+   ======================================================= */
+
+.testimonial-upgraded {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(6px);
+  border-radius: 22px;
+  padding: 40px;
+  margin: 0 auto;
+  max-width: 750px;
+  /* text-align: center; */
+  transition: all 0.35s ease;
+}
+
+.testimonial-upgraded:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.17);
+}
+
+.testimonial-text {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+.testimonial-user {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  gap: 8px;
+}
+
+.testimonial-avatar {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255,255,255,0.4);
+}
+
+.testimonial-name {
+  font-size: 1.05rem;
+  color: #fff;
+}
+
+.testimonial-role {
+  color: #d0d7e1 !important;
+}
+
+/* -------- Carousel Arrow Buttons -------- */
+
+.carousel-arrow {
+  width: 52px;
+  height: 52px;
+  background: rgba(255,255,255,0.25);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+}
+
+.carousel-arrow i {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.carousel-arrow:hover {
+  background: rgba(255,255,255,0.45);
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 90px;
+}
+
+.carousel-control-prev {
+  left: -10px;
+}
+.carousel-control-next {
+  right: -10px;
+}
+
+/* Better responsiveness */
+@media (max-width: 768px) {
+  .testimonial-upgraded {
+    padding: 26px;
+  }
+  .testimonial-text {
+    font-size: 1.1rem;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 70px;
+  }
+}
+
+/* ---------- Contact Form ---------- */
+#contactForm {
+  background: var(--surface-light);
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+}
+
+#contactForm .form-control {
+  background: rgba(255,255,255,0.06);
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+#contactForm .form-control::placeholder {
+  color: var(--text-soft);
+}
+
+#contactForm .form-control:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 0.12rem rgba(0, 194, 168, 0.25);
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  background: rgba(4,10,18,0.65);
+}
+
+/* ---------- Animations ---------- */
+.fade-in,
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.7s ease;
+}
+
+.fade-in.show,
+.fade-in-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- Responsive Tweaks ---------- */
+@media (max-width: 992px) {
+  .hero-section {
+    text-align: center;
+  }
+  .profile-img {
+    width: 145px;
+    height: 145px;
+  }
+  .brand-name {
+    display: none;
+  }
+}
