@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Antony Raj — Frontend Developer & UI/UX Specialist</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Rubik:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Smooth scrolling for anchor links -->
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Navbar -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <div class="brand-mark me-2">AR</div>
+        <div>
+          <div class="brand-name">Antony Raj</div>
+          <small class="d-none d-lg-block">Frontend Developer • UI/UX Specialist</small>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-2"><a class="btn btn-outline-light btn-sm" href="mailto:antonyrajgabrieal@gmail.com">Hire Me</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home" class="hero-section d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h1 class="display-5 fw-bold fade-in">Hi — I’m <span class="text-gradient">Antony Raj</span></h1>
+          <p class="lead mb-1">Frontend Developer • UI/UX Specialist • React.js Developer</p>
+
+          <!-- Animated typing text -->
+          <p class="typing mb-3" id="typedText" aria-hidden="true"></p>
+
+          <div class="d-flex gap-2">
+            <a href="#portfolio" class="btn btn-primary btn-lg">View Work</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg">Contact Me</a>
+          </div>
+
+          <ul class="list-unstyled mt-4 d-flex gap-3 small">
+            <li><strong>Location:</strong> Thanjavur, Tamil Nadu</li>
+            <li><strong>Email:</strong> <a href="mailto:antonyrajgabrieal@gmail.com" class="link-light">antonyrajgabrieal@gmail.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+918778725547" class="link-light">+91 87787 25547</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-5 text-center mt-4 mt-lg-0">
+          <!-- Profile card / image -->
+          <div class="profile-card fade-in-up">
+            <img src="https://picsum.photos/seed/antony/400/400" alt="Antony Raj" class="img-fluid rounded-circle profile-img shadow" />
+            <div class="mt-3">
+              <h5 class="mb-0">Antony Raj</h5>
+              <small class="text-muted">Frontend Developer & UI/UX Specialist</small>
+            </div>
+            <div class="mt-3">
+              <a href="#contact" class="btn btn-sm btn-light me-2">Download CV</a>
+              <a href="#services" class="btn btn-sm btn-outline-light">My Services</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="section py-6">
+    <div class="container">
+      <div class="row align-items-center gx-5">
+        <div class="col-lg-5 mb-4 mb-lg-0">
+          <img src="https://picsum.photos/seed/profile2/600/600" alt="Profile" class="img-fluid rounded shadow about-img fade-in-up" />
+        </div>
+
+        <div class="col-lg-7">
+          <h2 class="section-title fade-in">About Me</h2>
+          <p class="lead fade-in">Innovative and detail-oriented Frontend Developer & UI/UX Specialist with 3 years of experience designing and developing responsive, user-friendly web applications. Skilled in React.js, JavaScript (ES6+), HTML5, CSS3, Bootstrap, and REST API integration. Passionate about performance optimization, usability testing, and mentorship.</p>
+
+          <!-- Resume highlights / Experience -->
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <h6 class="mb-2">Experience</h6>
+              <ul class="timeline list-unstyled">
+                <li class="mb-3">
+                  <strong>Altolabs</strong> — UX Developer | React Frontend Developer<br>
+                  <small class="text-muted">July 2025 – Present • Remote/Thanjavur</small>
+                </li>
+                <li>
+                  <strong>Digifrontal Private Limited</strong> — UI/UX Web Developer<br>
+                  <small class="text-muted">Feb 2022 – June 2025 • Chennai</small>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-6">
+              <h6 class="mb-2">Education</h6>
+              <p class="mb-1"><strong>Bachelor of Information Technology</strong>, Vels University (2016 – 2019)</p>
+              <p class="mb-0"><strong>Diploma in Computer Science</strong>, Periyar Centenary Polytechnic (2013 – 2016)</p>
+            </div>
+          </div>
+
+          <!-- Skills -->
+          <h6 class="mt-4">Skills</h6>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="small text-muted">React.js</label>
+              <div class="progress mb-2">
+                <div class="progress-bar" role="progressbar" style="width: 90%;">90%</div>
+              </div>
+
+              <label class="small text-muted">JavaScript (ES6+)</label>
+              <div class="progress mb-2">
+                <div class="progress-bar" role="progressbar" style="width: 88%;">88%</div>
+              </div>
+
+              <label class="small text-muted">HTML5 & CSS3</label>
+              <div class="progress mb-2">
+                <div class="progress-bar" role="progressbar" style="width: 92%;">92%</div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label class="small text-muted">Bootstrap</label>
+              <div class="progress mb-2">
+                <div class="progress-bar" role="progressbar" style="width: 90%;">90%</div>
+              </div>
+
+              <label class="small text-muted">UI/UX (Figma)</label>
+              <div class="progress mb-2">
+                <div class="progress-bar" role="progressbar" style="width: 85%;">85%</div>
+              </div>
+
+              <label class="small text-muted">Performance & Optimization</label>
+              <div class="progress mb-2">
+                <div class="progress-bar" role="progressbar" style="width: 80%;">80%</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section section-alt py-6">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title fade-in">Services</h2>
+        <p class="text-white">What I can help you with — from pixel-perfect UI to performant frontend apps.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Service Card 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card service-card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <div class="service-icon mb-3"><i class="fa-solid fa-brush"></i></div>
+              <h5 class="card-title">UI/UX Design</h5>
+              <p class="card-text small text-muted">Wireframing, prototyping and usability testing for data-driven apps and dashboards.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card service-card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <div class="service-icon mb-3"><i class="fa-solid fa-code"></i></div>
+              <h5 class="card-title">Frontend Development</h5>
+              <p class="card-text small text-muted">Modern React.js apps, component-driven architecture and REST API integration.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card service-card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <div class="service-icon mb-3"><i class="fa-solid fa-tachometer-alt"></i></div>
+              <h5 class="card-title">Performance Optimization</h5>
+              <p class="card-text small text-muted">Bundle splitting, lazy loading, React hooks optimizations and faster load times.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card service-card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <div class="service-icon mb-3"><i class="fa-solid fa-robot"></i></div>
+              <h5 class="card-title">AI Integration</h5>
+              <p class="card-text small text-muted">Collaborated with AI engineers to bring machine learning models to user-facing apps.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="section py-6">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title fade-in">Portfolio</h2>
+        <p class="text-white">Selected projects — click to view details.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Project card template - repeated -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100 border-0 shadow-sm">
+            <div class="project-thumb overflow-hidden">
+              <img src="https://picsum.photos/seed/p1/800/600" class="card-img-top" alt="Project 1">
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#projectModal1">View Details</button>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">AI Dashboard - Task Automation</h5>
+              <p class="card-text small text-white mb-2">React.js • REST APIs • Data Visualization</p>
+              <div><small class="text-white">Improved task automation efficiency by 25%</small></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100 border-0 shadow-sm">
+            <div class="project-thumb overflow-hidden">
+              <img src="https://picsum.photos/seed/p2/800/600" class="card-img-top" alt="Project 2">
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#projectModal2">View Details</button>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">HRMS Portal</h5>
+              <p class="card-text small text-white mb-2">HTML5 • CSS3 • Bootstrap • JS</p>
+              <div><small class="text-white">Mobile-first HRMS & ERP interfaces</small></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100 border-0 shadow-sm">
+            <div class="project-thumb overflow-hidden">
+              <img src="https://picsum.photos/seed/p3/800/600" class="card-img-top" alt="Project 3">
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#projectModal3">View Details</button>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">ERP Interface Revamp</h5>
+              <p class="card-text small text-white mb-2">Component Library • Reusable UI</p>
+              <div><small class="text-white">Accelerated feature delivery by 15%</small></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Modals -->
+  <div class="modal fade" id="projectModal1" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">AI Dashboard - Task Automation</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-black">
+          <img src="https://picsum.photos/seed/p1/1200/600" class="img-fluid mb-3 rounded" alt="">
+          <p>Built a React-based AI dashboard integrating REST endpoints and data visualization. Implemented lazy-loading, hooks-based data fetching, and optimized re-renders to improve performance by 20%.</p>
+          <ul>
+            <li>React.js, Chart libraries, REST API integration</li>
+            <li>Performance optimizations & usability testing</li>
+            <li>Result: 25% improved automation efficiency</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="projectModal2" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">HRMS Portal</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="https://picsum.photos/seed/p2/1200/600" class="img-fluid mb-3 rounded" alt="">
+          <p>Front-end development for HRMS and ERP systems with a mobile-first approach. Built reusable components to reduce development time and improve maintainability.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="projectModal3" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">ERP Interface Revamp</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="https://picsum.photos/seed/p3/1200/600" class="img-fluid mb-3 rounded" alt="">
+          <p>Revamped legacy ERP UI with componentization, accessibility improvements, and performance gains. Coordinated with backend and design teams.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="section section-alt py-6">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Testimonials</h2>
+      <p class="text-white">What colleagues and clients say</p>
+    </div>
+    <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
+      <div class="carousel-inner">
+		<div class="carousel-item active">
+			<div class="testimonial-upgraded shadow-lg">          
+				<div class="testimonial-user">
+					<img src="https://picsum.photos/seed/t1/200" alt="Person 1" class="testimonial-avatar" />
+					<div>
+						<strong class="testimonial-name">Priya S.</strong><br>
+						<small class="testimonial-role">Product Manager</small><br>
+						<p>
+							“Antony delivered a fantastic React dashboard with clean components and superb optimization.”
+						</p>
+					</div>		  		 
+				</div>		 
+			</div>
+        </div>
+		<div class="carousel-item">
+			<div class="testimonial-upgraded shadow-lg">
+				<div class="testimonial-user">
+					<img src="https://picsum.photos/seed/t2/200" alt="Person 2" class="testimonial-avatar" />
+					<div>
+						<strong class="testimonial-name">Ramesh K.</strong><br>
+						<small class="testimonial-role">Engineering Lead</small>          
+						<p>
+							“Improved our HRMS UI significantly, reducing bug churn. Excellent UI/UX sense.”
+						</p>
+					</div>
+				</div>			
+			</div>
+        </div>
+        <div class="carousel-item">
+			<div class="testimonial-upgraded shadow-lg">
+				<div class="testimonial-user">
+					<img src="https://picsum.photos/seed/t3/200" alt="Person 3" class="testimonial-avatar" />
+					<div>
+						<strong class="testimonial-name">Asha V.</strong><br>
+						<small class="testimonial-role">Founder</small>              
+						<p>
+							“Fast, reliable and proactive — highly recommended for frontend and UX work!”
+						</p>
+					</div>
+				</div>
+			</div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+        <span class="carousel-arrow"><i class="fa-solid fa-chevron-left"></i></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+        <span class="carousel-arrow"><i class="fa-solid fa-chevron-right"></i></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section py-6">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title fade-in">Contact</h2>
+        <p class="text-white">Let's build something great. Send a message or reach out directly.</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          
+		  <form id="contactForm" action="sendMail.php" method="POST" class="card p-4 shadow-sm" novalidate>
+
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="name" class="form-label text-white">Name</label>
+                <input id="name" name="name" type="text" class="form-control" placeholder="Your name" required>
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="phone" class="form-label text-white">Phone</label>
+                <input id="phone" name="phone" type="tel" class="form-control" placeholder="+91 87787 25547">
+                <div class="invalid-feedback">Please enter a valid phone number.</div>
+              </div>
+
+              <div class="col-12">
+                <label for="email" class="form-label text-white">Email</label>
+                <input id="email" name="email" type="email" class="form-control" placeholder="you@example.com" required>
+                <div class="invalid-feedback">Please enter a valid email.</div>
+              </div>
+
+              <div class="col-12">
+                <label for="message" class="form-label text-white">Message</label>
+                <textarea id="message" name="message" class="form-control" rows="5" placeholder="Tell me about your project..." required></textarea>
+                <div class="invalid-feedback">Please enter a message.</div>
+              </div>
+
+              <div class="col-12 text-end">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </div>
+
+            </div>
+          </form>
+
+          <!-- small contact info -->
+          <div class="mt-4 text-center small text-white">
+            Or email me directly at <a href="mailto:antonyrajgabrieal@gmail.com">antonyrajgabrieal@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div class="mb-2 mb-md-0">
+        <strong>Antony Raj</strong> • Frontend Developer & UI/UX Specialist<br>
+        <small class="text-white">Thanjavur, Tamil Nadu • © <span id="year"></span></small>
+      </div>
+
+      <div class="socials">
+        <a class="btn btn-sm btn-outline-secondary me-2" href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a class="btn btn-sm btn-outline-secondary me-2" href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a class="btn btn-sm btn-outline-secondary" href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS (bundle includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+  <script>
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const form = this;
+
+    fetch("sendMail.php", {
+        method: "POST",
+        body: new FormData(form)
+    })
+    .then(res => res.text())
+    .then(text => {
+        if (text.trim() === "success") {
+            alert("Message sent successfully!");
+            form.reset();
+        } else {
+            alert("Failed to send message.");
+        }
+    })
+    .catch(err => {
+        console.error(err);
+        alert("Something went wrong.");
+    });
+});
+</script>
+
+</body>
+</html>
